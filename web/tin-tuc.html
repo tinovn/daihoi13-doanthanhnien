@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tin tức - Sự kiện | Đại hội Đoàn XIII</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Alfa+Slab+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="tin-tuc">
+<div id="ecc-header"></div>
+<div id="ecc-nav"></div>
+
+<section class="page-hero">
+  <div class="container-x">
+    <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Tin tức - Sự kiện</div>
+    <h1>TIN TỨC - SỰ KIỆN</h1>
+    <p class="text-yellow-300 text-sm">Cập nhật tin mới nhất về công tác chuẩn bị và diễn biến Đại hội Đoàn XIII</p>
+  </div>
+</section>
+
+<section class="py-10">
+  <div class="container-x grid lg:grid-cols-4 gap-6">
+    <!-- Main news grid -->
+    <div class="lg:col-span-3">
+      <div class="flex items-center gap-3 mb-6 border-b pb-3">
+        <button class="px-4 py-2 bg-red-600 text-white rounded text-sm font-bold">Tất cả</button>
+        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded text-sm font-semibold hover:bg-red-100">Chuẩn bị Đại hội</button>
+        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded text-sm font-semibold hover:bg-red-100">Đại hội các cấp</button>
+        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded text-sm font-semibold hover:bg-red-100">Hoạt động chào mừng</button>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6" id="news-grid"></div>
+
+      <div class="flex justify-center gap-2 mt-10">
+        <button class="px-3 py-2 border rounded text-sm hover:bg-gray-100">‹</button>
+        <button class="px-3 py-2 border rounded text-sm bg-red-600 text-white">1</button>
+        <button class="px-3 py-2 border rounded text-sm hover:bg-gray-100">2</button>
+        <button class="px-3 py-2 border rounded text-sm hover:bg-gray-100">3</button>
+        <button class="px-3 py-2 border rounded text-sm hover:bg-gray-100">›</button>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="space-y-6">
+      <div class="bg-red-50 border-l-4 border-red-600 p-4 rounded">
+        <h3 class="font-extrabold text-red-600 uppercase text-sm mb-3">Tin nổi bật</h3>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="hover:text-red-600 font-medium">Hội nghị triển khai công tác chuẩn bị Đại hội XIII</a></li>
+          <li><a href="#" class="hover:text-red-600 font-medium">Ban Bí thư làm việc với các tỉnh, thành đoàn</a></li>
+          <li><a href="#" class="hover:text-red-600 font-medium">Tuổi trẻ cả nước thi đua chào mừng Đại hội</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+        <h3 class="font-extrabold text-blue-700 uppercase text-sm mb-3">Lịch sự kiện</h3>
+        <div class="space-y-2 text-sm">
+          <div><strong class="text-blue-700">26/06/2026</strong><br/>Khai mạc Đại hội XIII</div>
+          <div><strong class="text-blue-700">28/06/2026</strong><br/>Phiên thảo luận chuyên đề</div>
+          <div><strong class="text-blue-700">30/06/2026</strong><br/>Bế mạc Đại hội</div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<div id="ecc-footer"></div>
+<div id="ecc-floating"></div>
+
+<script src="partials.js"></script>
+<script>
+// Sinh 8 news cards mẫu
+const newsImgs = [
+  'photo-1591115765373-5207764f72e7','photo-1521737604893-d14cc237f11d','photo-1529070538774-1843cb3265df',
+  'photo-1517048676732-d65bc937f952','photo-1571260899304-425eee4c7efc','photo-1582213782179-e0d53f98f2ca',
+  'photo-1519501025264-65ba15a82390','photo-1517245386807-bb43f82c33c4'
+];
+const newsTitles = [
+  'Hội nghị triển khai công tác chuẩn bị Đại hội Đoàn toàn quốc lần thứ XIII',
+  'Ban Bí thư Trung ương Đoàn làm việc với các tỉnh, thành đoàn',
+  'Tuổi trẻ cả nước thi đua lập thành tích chào mừng Đại hội XIII',
+  'Sôi nổi các hoạt động hướng về Đại hội Đoàn các cấp',
+  'Khai mạc diễn đàn "Tiếng nói tuổi trẻ" gửi tới Đại hội XIII',
+  'Phong trào tình nguyện mùa hè xanh thu hút 1 triệu đoàn viên',
+  'Hội nghị Ban Chấp hành Trung ương Đoàn khóa XII chuẩn bị Đại hội',
+  'Đoàn viên cả nước tham gia hiến máu nhân đạo chào mừng Đại hội'
+];
+const grid = document.getElementById('news-grid');
+newsTitles.forEach((title, i) => {
+  const date = `${10+i}/05/2026`;
+  grid.insertAdjacentHTML('beforeend', `
+    <article class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition">
+      <img src="https://images.unsplash.com/${newsImgs[i]}?w=600&q=80" class="w-full h-48 object-cover" alt=""/>
+      <div class="p-4">
+        <span class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded font-bold">CHUẨN BỊ ĐẠI HỘI</span>
+        <h3 class="font-bold mt-2 line-clamp-2 leading-snug">${title}</h3>
+        <p class="text-xs text-gray-500 mt-2">📅 ${date} · 👁 ${1000+i*200} lượt xem</p>
+      </div>
+    </article>
+  `);
+});
+</script>
+</body>
+</html>
