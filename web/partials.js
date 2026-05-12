@@ -33,14 +33,85 @@
   <symbol id="i-google-play" viewBox="0 0 24 24"><path d="M3.6 2.3c-.4.4-.6 1-.6 1.6v16.2c0 .6.2 1.2.6 1.6L13 12 3.6 2.3z" fill="#00C2EF"/><path d="M16.6 8.6L5.5 2.2c-.5-.3-1.1-.3-1.6-.1L13 12l3.6-3.4z" fill="#FFD54A"/><path d="M20.1 10.6l-3.5-2-3.6 3.4 3.6 3.4 3.5-2c1.2-.7 1.2-2.1 0-2.8z" fill="#FF3D44"/><path d="M5.5 21.8c.5.2 1.1.2 1.6-.1l11.1-6.4-3.6-3.3z" fill="#3BC661"/></symbol>
   <symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 12.5c0-2.5 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.7 3-.4 7.5 1.3 9.9.8 1.2 1.8 2.5 3.1 2.5 1.2-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.4-2.8-.1 0-2.7-1-2.7-4.2zm-2.4-7.7c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.3z"/></symbol>
   <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 14.9 9.1 22 9.7l-5.4 4.7L18.2 22 12 18l-6.2 4 1.6-7.6L2 9.7l7.1-.6z"/></symbol>
+
+  <!-- ===== CUSTOM ĐOÀN-THEMED ICONS (tự vẽ cho Đại hội XIII) ===== -->
+  <!-- Lá cờ Việt Nam nhỏ có cán -->
+  <symbol id="i-doan-flag" viewBox="0 0 32 32">
+    <line x1="6" y1="4" x2="6" y2="30" stroke="#8B4513" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M6 5 L28 4 Q29 9 28 14 L6 15 Z" fill="#DA251D" stroke="#B8050F" stroke-width="0.5"/>
+    <path d="M17 6 L18.2 9 L21.5 9.2 L19 11.3 L19.8 14.5 L17 12.8 L14.2 14.5 L15 11.3 L12.5 9.2 L15.8 9 Z" fill="#FFD700"/>
+  </symbol>
+
+  <!-- Huy hiệu Đoàn - simplified (vòng tròn + sao + cờ) -->
+  <symbol id="i-doan-emblem" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="15" fill="#DA251D"/>
+    <circle cx="16" cy="16" r="13.5" fill="none" stroke="#FFD700" stroke-width="0.6"/>
+    <path d="M16 6 L18.2 12.2 L24.8 12.4 L19.5 16.2 L21.5 22.5 L16 18.6 L10.5 22.5 L12.5 16.2 L7.2 12.4 L13.8 12.2 Z" fill="#FFD700"/>
+  </symbol>
+
+  <!-- Tài liệu văn kiện có dấu sao đỏ -->
+  <symbol id="i-doan-document" viewBox="0 0 32 32">
+    <rect x="6" y="3" width="20" height="26" rx="2" fill="#FAF0E0" stroke="#DA251D" stroke-width="1.5"/>
+    <rect x="10" y="8" width="12" height="1.5" rx="0.7" fill="#DA251D"/>
+    <rect x="10" y="12" width="12" height="1.5" rx="0.7" fill="#666"/>
+    <rect x="10" y="15" width="9" height="1.5" rx="0.7" fill="#666"/>
+    <path d="M16 18 L17.4 21 L20.7 21.3 L18.2 23.4 L19 26.7 L16 25 L13 26.7 L13.8 23.4 L11.3 21.3 L14.6 21 Z" fill="#FFD700" stroke="#DA251D" stroke-width="0.4"/>
+  </symbol>
+
+  <!-- Cánh tay vung lên cầm cờ (đại hội xung kích) -->
+  <symbol id="i-doan-fist-flag" viewBox="0 0 32 32">
+    <g fill="#FFD700">
+      <path d="M14 30 Q13 22 14.5 14 Q15.3 10 16 9 L16.5 7 Q17 5.5 17.5 7 L18 9 Q18.7 10 19.5 14 Q21 22 20 30 Z"/>
+      <ellipse cx="17" cy="6.5" rx="2.5" ry="2.3"/>
+    </g>
+    <line x1="18.5" y1="5" x2="28" y2="2" stroke="#FFD700" stroke-width="1" stroke-linecap="round"/>
+    <path d="M20 3 Q25 1 28 2 Q28.5 5.5 27.5 8.5 Q24 8 20 9 Z" fill="#DA251D" stroke="#FFD700" stroke-width="0.3"/>
+    <path d="M24 4.5 L24.5 5.6 L25.7 5.7 L24.7 6.5 L25 7.7 L24 7 L23 7.7 L23.3 6.5 L22.3 5.7 L23.5 5.6 Z" fill="#FFD700"/>
+  </symbol>
+
+  <!-- Thùng phiếu biểu quyết có dấu sao -->
+  <symbol id="i-doan-ballot" viewBox="0 0 32 32">
+    <path d="M5 13 L16 7 L27 13 L27 26 L5 26 Z" fill="#DA251D" stroke="#B8050F" stroke-width="1"/>
+    <rect x="13" y="11" width="6" height="3" rx="0.5" fill="#FAF0E0"/>
+    <rect x="11" y="17" width="10" height="6" rx="1" fill="#FAF0E0"/>
+    <path d="M16 18.5 L16.8 20.2 L18.5 20.3 L17.2 21.4 L17.6 23 L16 22.1 L14.4 23 L14.8 21.4 L13.5 20.3 L15.2 20.2 Z" fill="#DA251D"/>
+  </symbol>
+
+  <!-- Megaphone báo chí với cờ -->
+  <symbol id="i-doan-megaphone" viewBox="0 0 32 32">
+    <path d="M4 13 L4 19 L10 19 L20 26 L20 6 L10 13 Z" fill="#DA251D"/>
+    <path d="M20 8 L26 5 L28 7 L26 16 L20 17 Z" fill="#FFD700"/>
+    <circle cx="26" cy="9" r="2" fill="#DA251D"/>
+    <circle cx="22" cy="22" r="1.5" fill="#FAF0E0"/>
+    <line x1="22" y1="23.5" x2="22" y2="29" stroke="#666" stroke-width="1.5"/>
+  </symbol>
+
+  <!-- Bản đồ VN với sao đại hội -->
+  <symbol id="i-doan-map" viewBox="0 0 32 32">
+    <path d="M11 4 Q14 3 17 5 L18 9 L17 13 Q16 16 14 19 L12 24 L10 28 Q9 30 8 28 L9 24 L10 19 Q11 16 10 13 L9 9 L10 5 Z" fill="#0066B3" stroke="#003D7A" stroke-width="0.8"/>
+    <circle cx="13.5" cy="8" r="1.5" fill="#FFD700"/>
+    <circle cx="14" cy="15" r="1.2" fill="#22c55e"/>
+    <circle cx="12" cy="22" r="1.5" fill="#DA251D"/>
+    <g fill="#0066B3"><circle cx="23" cy="11" r="0.8"/><circle cx="25" cy="13" r="0.7"/><circle cx="24" cy="20" r="0.8"/><circle cx="26" cy="22" r="0.7"/></g>
+  </symbol>
+
+  <!-- Trái tim gửi gắm -->
+  <symbol id="i-doan-heart" viewBox="0 0 32 32">
+    <path d="M16 28 Q5 21 5 13 Q5 8 10 8 Q13 8 16 11 Q19 8 22 8 Q27 8 27 13 Q27 21 16 28 Z" fill="#DA251D"/>
+    <path d="M16 16 L16.8 18 L19 18.2 L17.4 19.5 L17.8 21.5 L16 20.5 L14.2 21.5 L14.6 19.5 L13 18.2 L15.2 18 Z" fill="#FFD700"/>
+  </symbol>
 </svg>`;
 
-  // ===== HEADER =====
+  // ===== HEADER (đồng bộ với index.html) =====
   const HEADER = `
 <header class="bg-white border-b border-gray-200">
   <div class="container-x flex items-center gap-6 py-4">
-    <a href="index.html" class="header-logo-img">
-      <img src="assets/images/logo.png" alt="Huy hiệu Đại hội Đoàn XIII" style="height:60px;width:auto;display:block"/>
+    <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+      <div class="header-logo-img"><img src="assets/images/logo.png" alt="Huy hiệu Đại hội Đoàn XIII" style="height:60px;width:auto;display:block"/></div>
+      <div>
+        <div class="text-red-600 font-extrabold text-base leading-tight uppercase">ĐẠI HỘI ĐOÀN TOÀN QUỐC<br/>LẦN THỨ XIII</div>
+        <div class="text-[10px] text-gray-500 font-medium tracking-wider mt-1">KHÁT VỌNG · TIÊN PHONG · ĐOÀN KẾT · BẢN LĨNH · SÁNG TẠO</div>
+      </div>
     </a>
     <div class="flex-1 max-w-xl ml-auto">
       <div class="relative">
