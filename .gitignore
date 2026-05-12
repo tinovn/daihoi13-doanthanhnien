@@ -10,3 +10,23 @@ build/
 
 # Adobe Illustrator source (lớn — không cần đẩy lên repo)
 *.ai
+
+# Laravel backend
+backend/node_modules/
+backend/vendor/
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/framework/testing/*
+backend/storage/app/public/*
+backend/bootstrap/cache/*.php
+backend/public/build/
+backend/public/hot
+backend/public/storage
+backend/database/database.sqlite
+backend/.phpunit.result.cache
