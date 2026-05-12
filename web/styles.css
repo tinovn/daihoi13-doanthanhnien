@@ -1277,6 +1277,24 @@ body {
 /* Nav active state */
 .nav-active { background: rgba(0,0,0,0.18); }
 
+/* ===== Landing page chi tiết kỳ Đại hội ===== */
+.kdh-landing-hero {
+  background:
+    linear-gradient(135deg, rgba(0,15,40,0.7), rgba(58,6,6,0.8)),
+    url('assets/images/bg-history.png') center/cover no-repeat;
+  background-color: #3a0606;
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+}
+.kdh-landing-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at top, rgba(218,37,29,0.3), transparent 60%);
+  pointer-events: none;
+}
+
 /* ===== UTILITIES ===== */
 .container-x { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
 

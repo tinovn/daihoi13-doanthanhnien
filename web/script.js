@@ -64,8 +64,8 @@
   }
 
   // ===== Slider Kỳ Đại hội — click chọn → active + center + update detail panel =====
-  // Dữ liệu 13 kỳ Đại hội Đoàn TNCS Hồ Chí Minh — mô tả chi tiết
-  const KDH_DATA = [
+  // Dữ liệu 13 kỳ Đại hội — ưu tiên dùng window.KDH_DATA (từ kdh-data.js), fallback array nội bộ
+  const KDH_DATA = (typeof window !== 'undefined' && window.KDH_DATA) ? window.KDH_DATA : [
     { yr:'1950', title:'Đại hội đại biểu toàn quốc Đoàn TN Cứu quốc Việt Nam lần thứ I', time:'7-14/02/1950', loc:'Huyện Đại Từ, Thái Nguyên', theme:'Chiến đấu và xây dựng tương lai', leader:'Đồng chí Nguyễn Lam',
       desc:'Đại hội lần thứ I là Đại hội đầu tiên của Đoàn được tổ chức trong thời kỳ kháng chiến chống thực dân Pháp xâm lược. Diễn ra tại chiến khu Việt Bắc, Đại hội đã quy tụ hàng trăm đại biểu thanh niên ưu tú từ khắp mọi miền đất nước về tham dự, đánh dấu bước phát triển mới của tổ chức Đoàn trong sự nghiệp đấu tranh giải phóng dân tộc. Đại hội đã đề ra nhiệm vụ động viên thanh niên hăng hái tham gia kháng chiến, thi đua sản xuất và học tập, xây dựng quân đội nhân dân và lực lượng vũ trang địa phương. Đồng chí Nguyễn Lam được bầu làm Bí thư thứ nhất Ban Chấp hành Trung ương Đoàn, mở ra trang sử mới cho phong trào thanh niên Việt Nam thời kỳ chống Pháp.' },
     { yr:'1956', title:'Đại hội đại biểu toàn quốc Đoàn Thanh niên Lao động Việt Nam lần thứ II', time:'25/10-04/11/1956', loc:'Thủ đô Hà Nội', theme:'Xây dựng CNXH ở miền Bắc, đấu tranh thống nhất nước nhà', leader:'Đồng chí Nguyễn Lam',
@@ -105,6 +105,10 @@
     setText('kdh-time', data.time);
     setText('kdh-loc', data.loc);
     setText('kdh-leader', data.leader);
+
+    // Update CTA "Xem chi tiết" link với id của slide active
+    const detailLink = document.getElementById('kdh-detail-link');
+    if (detailLink) detailLink.href = 'dai-hoi.html?id=' + index;
 
     // Description với drop-cap
     const descEl = document.getElementById('kdh-desc');

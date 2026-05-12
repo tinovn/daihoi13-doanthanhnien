@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Đại hội Đoàn — Chi tiết kỳ</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&family=Alfa+Slab+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body data-page="kydaihoi">
+<div id="ecc-header"></div>
+<div id="ecc-nav"></div>
+
+<!-- HERO BANNER kỳ Đại hội -->
+<section class="kdh-landing-hero">
+  <div class="kdh-landing-overlay"></div>
+  <div class="container-x relative z-10 py-16 text-center text-white">
+    <div class="breadcrumb mb-6"><a href="index.html">Trang chủ</a> / <a href="index.html#kydaihoi">Các kỳ Đại hội</a> / <span id="d-breadcrumb">Đại hội lần thứ XIII</span></div>
+
+    <!-- Roman badge có wreath bông lúa -->
+    <div class="relative inline-block mb-6">
+      <img src="assets/images/af-journey.b12172da.webp" alt="" style="position:absolute;width:340px;height:215px;top:50%;left:50%;transform:translate(-50%,-45%);z-index:1;pointer-events:none;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.4))"/>
+      <div class="relative z-10 mx-auto rounded-full bg-gradient-to-br from-red-600 to-red-800 shadow-2xl flex flex-col items-center justify-center text-white" style="width:220px;height:220px;border:4px solid rgba(255,215,0,0.3)">
+        <div class="text-yellow-300 font-bold text-xl tracking-widest" id="d-roman">XIII</div>
+        <div class="w-16 h-px bg-yellow-300/60 my-2"></div>
+        <div class="text-3xl font-black" id="d-year">2026</div>
+      </div>
+    </div>
+
+    <h1 class="text-2xl md:text-3xl font-extrabold uppercase mt-12" style="font-family:'Alfa Slab One',serif" id="d-page-title">ĐẠI HỘI ĐOÀN TOÀN QUỐC LẦN THỨ XIII</h1>
+    <p class="text-yellow-300 text-base mt-3" id="d-page-theme">Khát vọng - Tiên phong - Đoàn kết - Bản lĩnh - Sáng tạo</p>
+  </div>
+</section>
+
+<!-- THÔNG TIN CHÍNH -->
+<section class="py-12 bg-gray-50">
+  <div class="container-x grid lg:grid-cols-4 gap-4">
+    <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 text-center shadow-sm">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#DA251D" stroke-width="2" style="width:40px;height:40px;margin:0 auto 8px"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
+      <div class="text-xs text-gray-500 uppercase font-semibold">Thời gian</div>
+      <div class="font-extrabold text-red-600 mt-1" id="d-time">26/06/2026</div>
+    </div>
+    <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 text-center shadow-sm">
+      <svg viewBox="0 0 24 24" fill="#DA251D" style="width:40px;height:40px;margin:0 auto 8px"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+      <div class="text-xs text-gray-500 uppercase font-semibold">Địa điểm</div>
+      <div class="font-extrabold text-red-600 mt-1" id="d-loc">Thủ đô Hà Nội</div>
+    </div>
+    <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 text-center shadow-sm">
+      <svg viewBox="0 0 24 24" fill="#DA251D" style="width:40px;height:40px;margin:0 auto 8px"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.8"/><path d="M2 19c0-3 3.5-5 7-5s7 2 7 5v1H2z"/><path d="M16 14c2.5.2 6 1.8 6 4.5V20h-5v-1c0-2-1-3.6-2.4-4.7.4-.1.9-.2 1.4-.3z"/></svg>
+      <div class="text-xs text-gray-500 uppercase font-semibold">Số đại biểu</div>
+      <div class="font-extrabold text-red-600 mt-1" id="d-delegates">~1.000</div>
+    </div>
+    <div class="bg-white p-6 rounded-xl border-t-4 border-red-600 text-center shadow-sm">
+      <svg viewBox="0 0 24 24" fill="#DA251D" style="width:40px;height:40px;margin:0 auto 8px"><path d="M12 2 14.9 9.1 22 9.7l-5.4 4.7L18.2 22 12 18l-6.2 4 1.6-7.6L2 9.7l7.1-.6z"/></svg>
+      <div class="text-xs text-gray-500 uppercase font-semibold">Số đoàn viên</div>
+      <div class="font-extrabold text-red-600 mt-1" id="d-members">hơn 7 triệu</div>
+    </div>
+  </div>
+</section>
+
+<!-- NỘI DUNG CHÍNH -->
+<section class="py-12">
+  <div class="container-x grid lg:grid-cols-3 gap-10">
+    <!-- Sidebar Bí thư thứ nhất -->
+    <aside class="lg:col-span-1">
+      <div class="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 border border-red-200 sticky top-4">
+        <div class="text-xs text-red-600 font-bold uppercase tracking-wider mb-3">Bí thư thứ nhất</div>
+        <div class="bg-white rounded-lg p-4 mb-4 border border-red-200">
+          <div class="w-24 h-24 rounded-full mx-auto mb-3 bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center border-4 border-yellow-400">
+            <svg viewBox="0 0 24 24" fill="#fff" style="width:50px;height:50px"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7v1H4z"/></svg>
+          </div>
+          <div class="font-extrabold text-center text-red-700" id="d-leader">Đồng chí ...</div>
+          <div class="text-xs text-center text-gray-500 mt-1">Nhiệm kỳ <span id="d-period">XIII</span></div>
+        </div>
+
+        <h4 class="font-extrabold text-red-600 uppercase text-sm mb-3 mt-5">Phong trào tiêu biểu</h4>
+        <ul class="space-y-2 text-sm" id="d-movements"></ul>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <article class="lg:col-span-2">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-red-600 mb-6 uppercase" id="d-title">Đại hội đại biểu toàn quốc Đoàn TNCS Hồ Chí Minh lần thứ XIII</h2>
+      <div class="prose max-w-none">
+        <p class="text-gray-700 leading-8 text-base" id="d-desc">Đang tải nội dung...</p>
+      </div>
+
+      <!-- Khu vực hình ảnh / bộ sưu tập -->
+      <div class="mt-10">
+        <h3 class="font-extrabold text-red-600 uppercase text-lg mb-4">Hình ảnh tư liệu</h3>
+        <div class="grid grid-cols-3 gap-3">
+          <div class="aspect-video bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center text-red-600 font-bold">Ảnh 1</div>
+          <div class="aspect-video bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-lg flex items-center justify-center text-yellow-700 font-bold">Ảnh 2</div>
+          <div class="aspect-video bg-gradient-to-br from-red-100 to-red-200 rounded-lg flex items-center justify-center text-red-600 font-bold">Ảnh 3</div>
+        </div>
+      </div>
+
+      <!-- Tài liệu liên quan -->
+      <div class="mt-10 bg-gray-50 rounded-xl p-6 border border-gray-200">
+        <h3 class="font-extrabold text-red-600 uppercase text-lg mb-4">Tài liệu liên quan</h3>
+        <div class="space-y-2">
+          <a href="#" class="flex items-center gap-3 bg-white p-3 rounded border border-gray-200 hover:border-red-500 transition">
+            <div class="bg-red-100 text-red-700 font-extrabold p-2 rounded">PDF</div>
+            <div><div class="font-bold text-sm">Báo cáo chính trị Đại hội <span id="d-doc-roman">XIII</span></div><div class="text-xs text-gray-500">Tài liệu chính thức · 2.4 MB</div></div>
+          </a>
+          <a href="#" class="flex items-center gap-3 bg-white p-3 rounded border border-gray-200 hover:border-red-500 transition">
+            <div class="bg-yellow-100 text-yellow-700 font-extrabold p-2 rounded">DOC</div>
+            <div><div class="font-bold text-sm">Nghị quyết Đại hội</div><div class="text-xs text-gray-500">Văn kiện chính thức · 1.1 MB</div></div>
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PREV / NEXT navigation -->
+<section class="py-10 bg-gradient-to-r from-red-700 to-red-900 text-white">
+  <div class="container-x flex justify-between items-center">
+    <a id="d-prev-link" href="#" class="flex items-center gap-3 text-white hover:text-yellow-300 transition group">
+      <span class="text-3xl">‹</span>
+      <div class="text-left">
+        <div class="text-xs opacity-80">Kỳ trước</div>
+        <div class="font-bold" id="d-prev-name">Đại hội lần thứ XII</div>
+      </div>
+    </a>
+    <a href="index.html#kydaihoi" class="hidden md:flex flex-col items-center text-yellow-300 hover:text-white">
+      <span class="text-2xl">★ ★ ★</span>
+      <span class="text-xs mt-1">Xem tất cả</span>
+    </a>
+    <a id="d-next-link" href="#" class="flex items-center gap-3 text-white hover:text-yellow-300 transition group">
+      <div class="text-right">
+        <div class="text-xs opacity-80">Kỳ sau</div>
+        <div class="font-bold" id="d-next-name">—</div>
+      </div>
+      <span class="text-3xl">›</span>
+    </a>
+  </div>
+</section>
+
+<div id="ecc-footer"></div>
+<div id="ecc-floating"></div>
+
+<script src="kdh-data.js"></script>
+<script src="partials.js"></script>
+<script>
+// Đọc id từ URL: dai-hoi.html?id=12 (XIII default)
+const params = new URLSearchParams(window.location.search);
+const id = Math.max(0, Math.min(window.KDH_DATA.length - 1, parseInt(params.get('id') || '12')));
+const d = window.KDH_DATA[id];
+
+function setText(elId, val) {
+  const el = document.getElementById(elId);
+  if (el) el.textContent = val;
+}
+
+function setHTML(elId, html) {
+  const el = document.getElementById(elId);
+  if (el) el.innerHTML = html;
+}
+
+// Render data
+if (d) {
+  document.title = d.title + ' | Đại hội Đoàn XIII';
+  setText('d-breadcrumb', 'Đại hội lần thứ ' + d.roman);
+  setText('d-roman', d.roman);
+  setText('d-year', d.yr);
+  setText('d-page-title', d.title.toUpperCase());
+  setText('d-page-theme', d.theme);
+  setText('d-time', d.time);
+  setText('d-loc', d.loc);
+  setText('d-delegates', d.delegates);
+  setText('d-members', d.members);
+  setText('d-leader', d.leader);
+  setText('d-period', d.roman);
+  setText('d-title', d.title);
+  setText('d-doc-roman', d.roman);
+
+  // Description with drop-cap
+  const desc = d.desc;
+  setHTML('d-desc', '<span style="float:left;font-size:60px;font-weight:900;color:#DA251D;line-height:0.9;padding:4px 10px 0 0">' + desc.charAt(0) + '</span>' + desc.slice(1));
+
+  // Movements list
+  const movEl = document.getElementById('d-movements');
+  if (movEl && d.movements) {
+    movEl.innerHTML = d.movements.map(m => `
+      <li class="flex items-start gap-2">
+        <svg viewBox="0 0 24 24" fill="#FFD700" style="width:14px;height:14px;flex-shrink:0;margin-top:3px"><path d="M12 2 14.9 9.1 22 9.7l-5.4 4.7L18.2 22 12 18l-6.2 4 1.6-7.6L2 9.7l7.1-.6z"/></svg>
+        <span class="text-gray-700">${m}</span>
+      </li>
+    `).join('');
+  }
+
+  // Prev / Next links
+  const prevLink = document.getElementById('d-prev-link');
+  const nextLink = document.getElementById('d-next-link');
+  if (id > 0) {
+    prevLink.href = 'dai-hoi.html?id=' + (id - 1);
+    setText('d-prev-name', 'Đại hội lần thứ ' + window.KDH_DATA[id - 1].roman);
+  } else {
+    prevLink.style.visibility = 'hidden';
+  }
+  if (id < window.KDH_DATA.length - 1) {
+    nextLink.href = 'dai-hoi.html?id=' + (id + 1);
+    setText('d-next-name', 'Đại hội lần thứ ' + window.KDH_DATA[id + 1].roman);
+  } else {
+    nextLink.style.visibility = 'hidden';
+  }
+}
+</script>
+</body>
+</html>
