@@ -30,3 +30,14 @@ backend/public/hot
 backend/public/storage
 backend/database/database.sqlite
 backend/.phpunit.result.cache
+
+# Payload CMS admin
+admin/node_modules/
+admin/.next/
+admin/.env
+admin/.env.local
+admin/*.db
+admin/*.db-journal
+admin/media/
+admin/src/payload-types.ts
+admin/next-env.d.ts
