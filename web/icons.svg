@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+
+<!-- ===== LOGO HUY HIỆU ĐOÀN ===== -->
+<symbol id="i-logo-doan" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#E30613"/>
+  <circle cx="32" cy="32" r="26" fill="none" stroke="#FFD700" stroke-width="1.2"/>
+  <path d="M32 12 L36 25 L50 25 L39 33 L43 46 L32 38 L21 46 L25 33 L14 25 L28 25 Z" fill="#FFD700"/>
+  <path d="M32 38 C 28 44 30 50 32 54 C 34 50 36 44 32 38 Z" fill="#FF8800" opacity="0.9"/>
+</symbol>
+
+<!-- ===== SEARCH ===== -->
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="11" cy="11" r="7"/>
+  <line x1="20" y1="20" x2="16.5" y2="16.5"/>
+</symbol>
+
+<!-- ===== HOME ===== -->
+<symbol id="i-home" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3z"/>
+</symbol>
+
+<!-- ===== CALENDAR ===== -->
+<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="16" rx="2"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  <line x1="8" y1="3" x2="8" y2="7"/>
+  <line x1="16" y1="3" x2="16" y2="7"/>
+</symbol>
+
+<!-- ===== SHIELD STAR (Biểu trưng) ===== -->
+<symbol id="i-shield-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+  <path d="M12 2 4 5v7c0 5 3.5 9.2 8 10 4.5-.8 8-5 8-10V5z"/>
+  <path d="M12 7.5l1.5 3.5 3.5.3-2.7 2.4.9 3.5L12 15.5l-3.2 1.7.9-3.5L7 11.3l3.5-.3z" fill="currentColor" stroke="none"/>
+</symbol>
+
+<!-- ===== USERS (Ban tổ chức) ===== -->
+<symbol id="i-users" viewBox="0 0 24 24" fill="currentColor">
+  <circle cx="9" cy="8" r="3.5"/>
+  <circle cx="17" cy="9" r="2.8"/>
+  <path d="M2 19c0-3 3.5-5 7-5s7 2 7 5v1H2z"/>
+  <path d="M16 14c2.5.2 6 1.8 6 4.5V20h-5v-1c0-2-1-3.6-2.4-4.7.4-.1.9-.2 1.4-.3z"/>
+</symbol>
+
+<!-- ===== USER GROUP (Đoàn viên) ===== -->
+<symbol id="i-user-group" viewBox="0 0 24 24" fill="currentColor">
+  <circle cx="12" cy="8" r="4"/>
+  <path d="M4 21c0-4 4-7 8-7s8 3 8 7v1H4z"/>
+</symbol>
+
+<!-- ===== FILE TEXT (Tài liệu) ===== -->
+<symbol id="i-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8z"/>
+  <polyline points="14 2 14 8 20 8"/>
+  <line x1="8" y1="13" x2="16" y2="13"/>
+  <line x1="8" y1="17" x2="16" y2="17"/>
+  <line x1="8" y1="9" x2="10" y2="9"/>
+</symbol>
+
+<!-- ===== HEART ===== -->
+<symbol id="i-heart" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 21s-7.5-4.7-9.5-9.5C.8 7.4 3 3.5 7 3.5c2.2 0 3.8 1.3 5 3 1.2-1.7 2.8-3 5-3 4 0 6.2 3.9 4.5 8C19.5 16.3 12 21 12 21z"/>
+</symbol>
+
+<!-- ===== EYE ===== -->
+<symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+  <circle cx="12" cy="12" r="3"/>
+</symbol>
+
+<!-- ===== CLOCK ===== -->
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="9"/>
+  <polyline points="12 7 12 12 15 14"/>
+</symbol>
+
+<!-- ===== GEAR (Đề tài, sáng kiến) ===== -->
+<symbol id="i-gear" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M19.4 13c.1-.3.1-.7.1-1s0-.7-.1-1l2.1-1.7-2-3.4-2.5 1c-.5-.4-1.1-.7-1.7-1L15 3h-4l-.3 2.9c-.6.2-1.2.5-1.7 1l-2.5-1-2 3.4L6.6 11c-.1.3-.1.7-.1 1s0 .7.1 1l-2.1 1.7 2 3.4 2.5-1c.5.4 1.1.7 1.7 1L11 21h4l.3-2.9c.6-.2 1.2-.5 1.7-1l2.5 1 2-3.4-2.1-1.7zM12 15.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+</symbol>
+
+<!-- ===== LIGHTBULB (Khởi nghiệp) ===== -->
+<symbol id="i-lightbulb" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V17c0 .6.4 1 1 1h6c.6 0 1-.4 1-1v-2.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/>
+  <path d="M9 19v1c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2v-1z"/>
+</symbol>
+
+<!-- ===== HANDSHAKE (Công trình thanh niên) ===== -->
+<symbol id="i-handshake" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M2 12.5L5 9.5l3 1.5L11.5 7l2 .5L15 6l2 2-3 3-1.5-.5L9 14l-3-1.5-2 2.5z"/>
+  <path d="M22 12l-3 3-2.5-1L13 17.5l-2 .5-1.5 1.5-2-2 3.5-3 1.5.5 3.5-3.5 3 1.5z" opacity="0.7"/>
+  <circle cx="6" cy="7" r="2"/>
+  <circle cx="18" cy="17" r="2"/>
+</symbol>
+
+<!-- ===== CHAT BUBBLES (Góp ý) ===== -->
+<symbol id="i-chat" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20 2H7C5.9 2 5 2.9 5 4v9c0 1.1.9 2 2 2h11l4 4V4c0-1.1-.9-2-2-2z"/>
+  <path d="M3 11v6c0 1.1.9 2 2 2h11v2l-3-3H5c-1.1 0-2-.9-2-2v-5z" opacity="0.5"/>
+</symbol>
+
+<!-- ===== CHART BAR (Infographic) ===== -->
+<symbol id="i-chart" viewBox="0 0 24 24" fill="currentColor">
+  <rect x="3" y="14" width="4" height="7" rx="1"/>
+  <rect x="10" y="9" width="4" height="12" rx="1"/>
+  <rect x="17" y="4" width="4" height="17" rx="1"/>
+</symbol>
+
+<!-- ===== BOOK OPEN (E-Magazine) ===== -->
+<symbol id="i-book" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M3 5c2.5-1 5.5-1 9 1v14c-3.5-2-6.5-2-9-1z"/>
+  <path d="M21 5c-2.5-1-5.5-1-9 1v14c3.5-2 6.5-2 9-1z" opacity="0.7"/>
+</symbol>
+
+<!-- ===== PDF Badge ===== -->
+<symbol id="i-pdf" viewBox="0 0 32 24" fill="currentColor">
+  <rect x="1" y="1" width="30" height="22" rx="3" fill="currentColor"/>
+  <text x="16" y="17" font-family="Arial,sans-serif" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">PDF</text>
+</symbol>
+
+<!-- ===== LOCK (Đại biểu) ===== -->
+<symbol id="i-lock" viewBox="0 0 24 24" fill="currentColor">
+  <rect x="4" y="10" width="16" height="11" rx="2"/>
+  <path d="M8 10V7a4 4 0 1 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/>
+  <circle cx="12" cy="15" r="1.5" fill="#fff"/>
+</symbol>
+
+<!-- ===== LAPTOP ===== -->
+<symbol id="i-laptop" viewBox="0 0 32 24" fill="currentColor">
+  <rect x="4" y="2" width="24" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  <rect x="6" y="4" width="20" height="12" rx="1" fill="currentColor" opacity="0.3"/>
+  <path d="M1 19h30l-2 3H3z"/>
+</symbol>
+
+<!-- ===== HEADSET (Báo chí) ===== -->
+<symbol id="i-headset" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 3a9 9 0 0 0-9 9v5a2 2 0 0 0 2 2h2v-7H5v0a7 7 0 1 1 14 0v0h-2v7h2c.4 0 .8-.1 1.1-.3-.3 1.6-1.6 2.9-3.1 3.2V21h-3v1h3c2.8 0 5-2.2 5-5v-5a9 9 0 0 0-9-9z"/>
+</symbol>
+
+<!-- ===== CAMERA (Press) ===== -->
+<symbol id="i-camera" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20 6h-3.2l-1.8-2H9L7.2 6H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"/>
+  <circle cx="12" cy="13" r="4" fill="#fff"/>
+  <circle cx="12" cy="13" r="2.5" fill="currentColor"/>
+</symbol>
+
+<!-- ===== CLOSE ===== -->
+<symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+  <line x1="6" y1="6" x2="18" y2="18"/>
+  <line x1="18" y1="6" x2="6" y2="18"/>
+</symbol>
+
+<!-- ===== ROBOT (Chatbot) ===== -->
+<symbol id="i-robot" viewBox="0 0 24 24" fill="currentColor">
+  <rect x="4" y="7" width="16" height="13" rx="3"/>
+  <circle cx="9" cy="13" r="1.5" fill="#fff"/>
+  <circle cx="15" cy="13" r="1.5" fill="#fff"/>
+  <rect x="10" y="16" width="4" height="1" rx="0.5" fill="#fff"/>
+  <path d="M12 4v3M10 4h4" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="12" cy="3" r="1"/>
+  <rect x="2" y="11" width="2" height="5" rx="1"/>
+  <rect x="20" y="11" width="2" height="5" rx="1"/>
+</symbol>
+
+<!-- ===== MESSENGER ===== -->
+<symbol id="i-messenger" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 2C6.5 2 2 6.1 2 11.2c0 2.8 1.4 5.3 3.6 7v3.8l3.3-1.8c.9.3 1.9.4 3.1.4 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 12.4L10.5 12 6 14.5l5-5.3L13.5 12 18 9.5l-5 4.9z"/>
+</symbol>
+
+<!-- ===== FACEBOOK ===== -->
+<symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/>
+</symbol>
+
+<!-- ===== INSTAGRAM ===== -->
+<symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+  <rect x="3" y="3" width="18" height="18" rx="5"/>
+  <circle cx="12" cy="12" r="4"/>
+  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+</symbol>
+
+<!-- ===== YOUTUBE ===== -->
+<symbol id="i-youtube" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M22 7.3c-.2-1.5-.9-2.6-2.5-2.8C16.7 4 12 4 12 4s-4.7 0-7.5.5C2.9 4.7 2.2 5.8 2 7.3 1.7 9.2 1.7 12 1.7 12s0 2.8.3 4.7c.2 1.5.9 2.6 2.5 2.8C7.3 20 12 20 12 20s4.7 0 7.5-.5c1.6-.2 2.3-1.3 2.5-2.8.3-1.9.3-4.7.3-4.7s0-2.8-.3-4.7zM10 15.5v-7l6 3.5z"/>
+</symbol>
+
+<!-- ===== TIKTOK ===== -->
+<symbol id="i-tiktok" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20 8.5a6.7 6.7 0 0 1-3.9-1.2v8.4c0 3.5-2.8 6.3-6.3 6.3s-6.3-2.8-6.3-6.3 2.8-6.3 6.3-6.3c.3 0 .7 0 1 .1v3.4c-.3-.1-.7-.2-1-.2-1.7 0-3 1.4-3 3s1.4 3 3 3 3-1.4 3-3V2h3.2c.3 1.9 1.6 3.5 3.5 4.1z"/>
+</symbol>
+
+<!-- ===== ZALO ===== -->
+<symbol id="i-zalo" viewBox="0 0 64 24" fill="currentColor">
+  <text x="32" y="18" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="currentColor" text-anchor="middle">Zalo</text>
+</symbol>
+
+<!-- ===== GOOGLE PLAY ===== -->
+<symbol id="i-google-play" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M3.6 2.3c-.4.4-.6 1-.6 1.6v16.2c0 .6.2 1.2.6 1.6L13 12 3.6 2.3z"/>
+  <path d="M16.6 8.6L5.5 2.2c-.5-.3-1.1-.3-1.6-.1L13 12l3.6-3.4z" fill="#FFD54A"/>
+  <path d="M20.1 10.6l-3.5-2 -3.6 3.4 3.6 3.4 3.5-2c1.2-.7 1.2-2.1 0-2.8z" fill="#0AB0DC"/>
+  <path d="M5.5 21.8c.5.2 1.1.2 1.6-.1l11.1-6.4-3.6-3.3z" fill="#3BC661"/>
+</symbol>
+
+<!-- ===== APPLE ===== -->
+<symbol id="i-apple" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M17.5 12.5c0-2.5 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-2-.9-3.3-.8-1.7 0-3.2 1-4.1 2.5-1.7 3-.4 7.5 1.3 9.9.8 1.2 1.8 2.5 3.1 2.5 1.2-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.4-2.8-.1 0-2.7-1-2.7-4.2zm-2.4-7.7c.7-.8 1.1-2 1-3.2-1 0-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.3z"/>
+</symbol>
+
+<!-- ===== STAR ===== -->
+<symbol id="i-star" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 2 14.9 9.1 22 9.7l-5.4 4.7L18.2 22 12 18l-6.2 4 1.6-7.6L2 9.7l7.1-.6z"/>
+</symbol>
+
+</svg>

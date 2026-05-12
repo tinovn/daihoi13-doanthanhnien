@@ -1,0 +1,12 @@
+.DS_Store
+node_modules/
+.vscode/
+.idea/
+*.log
+dist/
+build/
+.env
+.env.local
+
+# Adobe Illustrator source (lớn — không cần đẩy lên repo)
+*.ai
