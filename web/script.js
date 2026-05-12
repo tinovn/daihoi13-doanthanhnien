@@ -186,18 +186,30 @@
     if (pnNext) pnNext.addEventListener('click', function () { swiper.slideNext(); });
   }
 
-  // ===== Init on DOM ready =====
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      initCountdown();
-      initFloating();
-      initQuoteCarousel();
-      initKydaihoiSlider();
-    });
-  } else {
+  // ===== Init on DOM ready — thử fetch API trước, fallback hardcoded =====
+  async function initAll() {
+    // Cố gắng load 13 kỳ Đại hội từ Payload API (nếu backend chạy)
+    if (window.DaiHoiAPI) {
+      try {
+        const data = await window.DaiHoiAPI.getDaiHoiList();
+        if (data && data.length) {
+          window.KDH_DATA = data;
+          console.log('[API] Loaded', data.length, 'kỳ Đại hội từ Payload');
+        }
+      } catch (err) {
+        console.warn('[API] Fallback to hardcoded KDH_DATA');
+      }
+    }
+
     initCountdown();
     initFloating();
     initQuoteCarousel();
     initKydaihoiSlider();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
   }
 })();

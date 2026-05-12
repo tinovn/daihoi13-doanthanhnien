@@ -141,13 +141,20 @@
 <div id="ecc-footer"></div>
 <div id="ecc-floating"></div>
 
+<script src="api-client.js"></script>
 <script src="kdh-data.js"></script>
 <script src="partials.js"></script>
 <script>
 // Đọc id từ URL: dai-hoi.html?id=12 (XIII default)
-const params = new URLSearchParams(window.location.search);
-const id = Math.max(0, Math.min(window.KDH_DATA.length - 1, parseInt(params.get('id') || '12')));
-const d = window.KDH_DATA[id];
+(async function () {
+  // Thử fetch từ Payload API trước
+  if (window.DaiHoiAPI) {
+    const data = await window.DaiHoiAPI.getDaiHoiList();
+    if (data && data.length) window.KDH_DATA = data;
+  }
+  const params = new URLSearchParams(window.location.search);
+  const id = Math.max(0, Math.min(window.KDH_DATA.length - 1, parseInt(params.get('id') || '12')));
+  const d = window.KDH_DATA[id];
 
 function setText(elId, val) {
   const el = document.getElementById(elId);
@@ -207,6 +214,7 @@ if (d) {
     nextLink.style.visibility = 'hidden';
   }
 }
+})();
 </script>
 </body>
 </html>
