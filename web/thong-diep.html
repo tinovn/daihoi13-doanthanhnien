@@ -48,17 +48,17 @@
         <p class="text-xs text-gray-500 mt-3">* Thông điệp sẽ được kiểm duyệt trước khi hiển thị công khai</p>
       </div>
 
-      <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-500 p-5 rounded">
-        <h3 class="font-extrabold text-yellow-700 mb-2">Đám mây từ khóa</h3>
+      <div class="mt-6 bg-red-50 border-l-4 border-red-500 p-5 rounded">
+        <h3 class="font-extrabold text-red-600 mb-2">Đám mây từ khóa</h3>
         <div class="flex flex-wrap gap-2 text-sm">
           <span class="bg-yellow-200 px-3 py-1 rounded-full" style="font-size:20px">Khát vọng</span>
           <span class="bg-red-200 px-2 py-1 rounded-full">Tiên phong</span>
-          <span class="bg-blue-200 px-3 py-1 rounded-full" style="font-size:18px">Đoàn kết</span>
-          <span class="bg-green-200 px-2 py-1 rounded-full">Sáng tạo</span>
-          <span class="bg-pink-200 px-2 py-1 rounded-full">Bản lĩnh</span>
-          <span class="bg-purple-200 px-3 py-1 rounded-full" style="font-size:16px">Cống hiến</span>
-          <span class="bg-orange-200 px-2 py-1 rounded-full">Tuổi trẻ</span>
-          <span class="bg-cyan-200 px-2 py-1 rounded-full">Việt Nam</span>
+          <span class="bg-yellow-200 px-3 py-1 rounded-full" style="font-size:18px">Đoàn kết</span>
+          <span class="bg-red-200 px-2 py-1 rounded-full">Sáng tạo</span>
+          <span class="bg-red-100 px-2 py-1 rounded-full">Bản lĩnh</span>
+          <span class="bg-yellow-100 px-3 py-1 rounded-full" style="font-size:16px">Cống hiến</span>
+          <span class="bg-red-200 px-2 py-1 rounded-full">Tuổi trẻ</span>
+          <span class="bg-yellow-200 px-2 py-1 rounded-full">Việt Nam</span>
           <span class="bg-yellow-200 px-2 py-1 rounded-full">Hùng cường</span>
           <span class="bg-red-200 px-2 py-1 rounded-full">Thịnh vượng</span>
         </div>
@@ -79,13 +79,14 @@
 <div id="ecc-floating"></div>
 <script src="partials.js"></script>
 <script>
+// Đồng bộ tone: chỉ red + yellow (xen kẽ)
 const messages = [
   { name:'Nguyễn Minh Anh', loc:'Đoàn viên Hà Nội', msg:'Tuổi trẻ Việt Nam tiên phong trong chuyển đổi số, khởi nghiệp sáng tạo, góp phần xây dựng đất nước phát triển nhanh và bền vững.', color:'red' },
-  { name:'Trần Văn Bình', loc:'Đại học Quốc gia TP. HCM', msg:'Khát vọng cống hiến của tuổi trẻ là động lực để chúng ta cùng nhau xây dựng Việt Nam hùng cường, thịnh vượng vào năm 2045.', color:'blue' },
-  { name:'Lê Thị Thanh', loc:'Đoàn viên Đà Nẵng', msg:'Tự hào là đoàn viên TNCS Hồ Chí Minh! Chúc Đại hội XIII thành công rực rỡ, đề ra phương hướng đúng đắn cho tuổi trẻ Việt Nam.', color:'yellow' },
-  { name:'Phạm Quang Huy', loc:'Bí thư chi đoàn ĐH Bách Khoa', msg:'Mong Đại hội tiếp tục đẩy mạnh phong trào khởi nghiệp đổi mới sáng tạo, giúp đoàn viên thanh niên phát huy tối đa tiềm năng.', color:'green' },
-  { name:'Hoàng Thị Mai', loc:'Đoàn viên Cần Thơ', msg:'Hãy tin tưởng vào thế hệ trẻ! Chúng tôi sẽ kế thừa và phát huy truyền thống vẻ vang của Đoàn, viết tiếp những trang sử mới.', color:'purple' },
-  { name:'Đặng Văn Long', loc:'Cán bộ Đoàn Hải Phòng', msg:'Đại hội XIII là cơ hội để tuổi trẻ Việt Nam đoàn kết, sáng tạo, đóng góp xây dựng đất nước phồn vinh, hạnh phúc.', color:'red' }
+  { name:'Trần Văn Bình', loc:'Đại học Quốc gia TP. HCM', msg:'Khát vọng cống hiến của tuổi trẻ là động lực để chúng ta cùng nhau xây dựng Việt Nam hùng cường, thịnh vượng vào năm 2045.', color:'yellow' },
+  { name:'Lê Thị Thanh', loc:'Đoàn viên Đà Nẵng', msg:'Tự hào là đoàn viên TNCS Hồ Chí Minh! Chúc Đại hội XIII thành công rực rỡ, đề ra phương hướng đúng đắn cho tuổi trẻ Việt Nam.', color:'red' },
+  { name:'Phạm Quang Huy', loc:'Bí thư chi đoàn ĐH Bách Khoa', msg:'Mong Đại hội tiếp tục đẩy mạnh phong trào khởi nghiệp đổi mới sáng tạo, giúp đoàn viên thanh niên phát huy tối đa tiềm năng.', color:'yellow' },
+  { name:'Hoàng Thị Mai', loc:'Đoàn viên Cần Thơ', msg:'Hãy tin tưởng vào thế hệ trẻ! Chúng tôi sẽ kế thừa và phát huy truyền thống vẻ vang của Đoàn, viết tiếp những trang sử mới.', color:'red' },
+  { name:'Đặng Văn Long', loc:'Cán bộ Đoàn Hải Phòng', msg:'Đại hội XIII là cơ hội để tuổi trẻ Việt Nam đoàn kết, sáng tạo, đóng góp xây dựng đất nước phồn vinh, hạnh phúc.', color:'yellow' }
 ];
 const wall = document.getElementById('msg-wall');
 messages.forEach(m => {
